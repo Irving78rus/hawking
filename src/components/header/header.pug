@@ -1,0 +1,25 @@
+include ../../views/helpers/mixins
+.header
+    
+    img.logo(src='../../assets/images/Logo.png' alt='Logo' )
+ 
+    img.burger(src='../../assets/images/burger menu.png' alt='burger' )
+
+    ul.menu 
+        li Каталог товаров        
+        li доставка и оплата        
+        li Цены        
+        li Контакты
+    
+    .tel +7 (812) 
+        span 509 21 98
+    .call_me перезвоните мне
+    +mixinSocials(class='socialWebs')
+
+    ul.extraMenu 
+        li 
+            include ../../assets/images/search.svg
+        li 
+            include ../../assets/images/like.svg
+        li 
+            include ../../assets/images/cart.svg

@@ -1,0 +1,324 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import-normalize;
+body {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 22px 43px;
+}
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header ul li {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 23px;
+  list-style: none;
+  color: #4C858B;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.header .logo {
+  max-width: 90px;
+}
+.header .burger {
+  max-width: 48px;
+}
+.header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu li {
+  margin: 0 15px;
+}
+.header .tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  margin-right: 20px;
+}
+.header .tel span {
+  font-weight: 700;
+}
+.header .call_me {
+  margin-right: 30px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #ae2236;
+  border-bottom: 1px dashed #ae2236;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header .socialWebs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100px;
+}
+.header .extraMenu {
+  margin-right: 10px;
+}
+
+footer {
+  height: 350px;
+  width: 100%;
+  background: #0C2F33;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .footer {
+  max-width: 1218px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+footer h4 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin: 0 0 18px 0;
+}
+footer ul {
+  list-style: none;
+  display: grid;
+  justify-items: start;
+  grid-template-columns: 1fr 1fr;
+}
+footer ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding: 0 0 19px 0;
+}
+footer ul li:hover {
+  opacity: 0.85;
+}
+footer .catalog,
+footer .information,
+footer .contacts {
+  width: 30%;
+}
+footer .contacts ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .contacts ul .contacts_socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+}
+footer .contacts ul .contacts_socials li {
+  width: 100%;
+}
+footer .contacts ul .contacts_socials li:hover {
+  opacity: 0.85;
+}
+footer .contacts .catalog_items li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .contacts .catalog_items li:hover {
+  opacity: 0.85;
+}
+footer .contacts .catalog_items li p {
+  padding: 0 0 0 8px;
+}
+footer .contacts .catalog_items li p span {
+  color: #4C858B;
+}
+
+.wrapper {
+  max-width: 1381px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 180px;
+  padding-right: 150px;
+}
+.wrapper .head h1 {
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 73px;
+  color: #000000;
+}
+.wrapper .breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #E5E5E5;
+  border-top: 1px solid #E5E5E5;
+  padding: 14px 0;
+}
+.wrapper .breadcrumbs p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #B1B1B1;
+}
+.wrapper .breadcrumbs .active {
+  color: #4C858B;
+}
+.wrapper .content {
+  display: flex;
+  margin: 73px 0 47px 0;
+}
+.wrapper .content p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #000000;
+}
+.wrapper .content p span {
+  color: #AE2236;
+  cursor: pointer;
+}
+.wrapper .performances {
+  display: flex;
+}
+.wrapper .performances .performances_list {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.wrapper .performances .performances_list h3 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 33px;
+  color: #000000;
+}
+.wrapper .performances .performances_list h2 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 63px;
+  color: #AE2236;
+  text-transform: uppercase;
+  margin: 0 0 39px 0;
+}
+.wrapper .performances .performances_list ul {
+  list-style: none;
+  margin: 0 0 0 45px;
+  list-style-image: url("../../assets/images/chimney/marker.svg");
+}
+.wrapper .performances .performances_list ul li {
+  margin: 35px 0;
+}
+.wrapper .performances .performances_chimney {
+  width: 50%;
+  position: relative;
+}
+.wrapper .performances .performances_chimney #dots1 {
+  position: absolute;
+  top: 0;
+  left: 32%;
+}
+.wrapper .performances .performances_chimney #dots2 {
+  position: absolute;
+  bottom: 0;
+  right: 12%;
+}
+.wrapper .performances .performances_chimney #chimney {
+  position: absolute;
+  bottom: 24%;
+  right: -15%;
+}
+.wrapper .performances .performances_chimney #triangle1 {
+  position: absolute;
+  top: 6%;
+  right: -40%;
+}
+.wrapper .performances .performances_chimney #triangle2 {
+  position: absolute;
+  top: 23%;
+  left: 5%;
+}
+.wrapper .fitInstruction ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .fitInstruction ul .wrap {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .fitInstruction ul .flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  fill: orange;
+}
+.wrapper .fitInstruction ul .flex span {
+  color: rgba(255, 0, 0, 0.245);
+  font-weight: 700;
+  font-size: 50px;
+}
+.wrapper .fitInstruction ul .flex li {
+  list-style: none;
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+.wrapper .fitInstruction ul svg {
+  fill: orange;
+}
+.wrapper .art_header {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+  margin: 11px 0 51px 0;
+  position: relative;
+}
+.wrapper .red-line {
+  margin-top: 100px;
+  width: 74px;
+  height: 5px;
+  background-color: red;
+}
+
+.advantages-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.advantages span {
+  color: red;
+}
+
+.advantages > * {
+  margin-top: 10px;
+}
+
+.form {
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+}/*# sourceMappingURL=main.css.map */
